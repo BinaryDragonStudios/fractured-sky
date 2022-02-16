@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+    <title>Fractured Sky</title>
+</head>
+<body>
+
+    <!-- anywhere on the page -->
+    <div v-scope="{ count: 0 }">
+        {{ count }}
+        <button @click="count++">inc</button>
+    </div>
+
+    <div>
+        <button @click="count++">inc</button>
+        <button @click="count--">dec</button>
+    </div>
+
+</body>
+</html>
