@@ -11,13 +11,13 @@
 
     <!-- anywhere on the page -->
     <div v-scope="{ count: 0 }">
-        {{ count }}
+        {{ count }}<br>
+        <!-- <button @click="count++">inc</button> -->
         <button @click="count++">inc</button>
+        <button @click="count--">dec</button>
     </div>
 
     <div>
-        <button @click="count++">inc</button>
-        <button @click="count--">dec</button>
     </div>
 
 </body>
